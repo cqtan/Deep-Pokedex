@@ -5,6 +5,10 @@ __pycache__/
 .vscode
 venv-pokedex*
 *.mlmodel
+data
+data2
+tmp_*
+pokedex-vgg16_v*
 
 # C extensions
 *.so
