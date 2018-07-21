@@ -8,8 +8,6 @@ import coremltools
 mobilenet_model = mobilenet.MobileNet(weights='imagenet')
 resnet_model = resnet50.ResNet50(weights='imagenet')
 
-imagenet_labels_dict = 
-
 coreml_mobilenet_model = coremltools.converters.keras.convert(mobilenet_model,
 	input_names="image",
 	image_input_names="image",
