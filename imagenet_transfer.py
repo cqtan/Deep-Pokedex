@@ -96,15 +96,15 @@ model.add(layers.Dense(num_classes, activation='softmax'))
 
 model.summary()
 
-# Checkpoints
-tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
-checkpoint = ModelCheckpoint(model_name, monitor='val_loss', verbose=1,save_best_only=True,save_weights_only=False, mode='min',period=1)
-callbacks_list = [checkpoint,tensorboard]
-
 # Compile the model
 model.compile(loss='categorical_crossentropy',
               optimizer=optimizers.RMSprop(lr=1e-4),
               metrics=['acc'])
+
+# Checkpoints
+tensorboard = TensorBoard(log_dir="logs/{}".format(time()))
+checkpoint = ModelCheckpoint(model_name, monitor='val_loss', verbose=1,save_best_only=True,save_weights_only=False, mode='min',period=1)
+callbacks_list = [checkpoint,tensorboard]
 
 # Train the Model
 # NOTE that we have multiplied the steps_per_epoch by 2. This is because we are using data augmentation.

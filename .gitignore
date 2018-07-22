@@ -9,6 +9,9 @@ data
 data2
 tmp_*
 pokedex-vgg16_v*
+train-data-*
+notes
+old*
 
 # C extensions
 *.so
