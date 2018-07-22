@@ -3,7 +3,7 @@ from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 from keras import layers, models, optimizers
-from keras.applications import mobilenetv2
+from keras.applications import mobilenetv2, mobilenet
 from keras.preprocessing import image
 from time import gmtime, strftime
 from helpers import Plotter 
@@ -16,12 +16,12 @@ import logging
 import pickle
 import os
 
-# Usage: python imagenet_mobilenet.py -dt train-data-v3_11/train -dv train-data-v3_11/val -l lb-v3_11.pickle
+# Usage: python imagenet_mobilenet.py -dt train-data-v3_11/train -dv train-data-v3_11/val -l model/lb-v3_11.pickle
 epoch_amount = 20
 image_size = 224
 batch_size=20
-model_name = 'pokedex-mobilenet2_v4'
-plot_file_name = 'mobile2_v4'
+model_name = 'pokedex-mobilenet2_v6'
+plot_file_name = 'mobile2_v6'
 
 start_time = time()
 
@@ -70,7 +70,7 @@ validation_generator = test_datagen.flow_from_directory(
 pretrained_model = mobilenetv2.MobileNetV2(input_shape=(image_size, image_size, 3), include_top=False, weights='imagenet')
 
 # Freeze all the layers
-#for layer in vgg_model.layers[:-4]:
+#for layer in pretrained_model.layers[:-4]:
 #    layer.trainable = False
 
 # Check the trainable status of the individual layers
