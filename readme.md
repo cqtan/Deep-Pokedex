@@ -1,5 +1,7 @@
 # **Pokédex Imagenet**
 
+![Pokedex header](https://github.com/CouchCat/Pokedex-Imagenet/blob/master/resources/pokedex_header.png)
+
 ## **Summary**
 My first attempt in recreating the Pokédex experience with the help of Deep Learning algorithms and a smartphone. To be more precise, models used for this project were a smaller version of the VGGnet, the full version of the VGG16net and the MobilenetV2. The following will be a walkthrough of my experience, thoughts as well as the results of this project. Towards the end I included a How-To guide in using my scripts.
 
@@ -10,9 +12,15 @@ My first attempt in recreating the Pokédex experience with the help of Deep Lea
 * Training data classes (11): 
     * Background, Bulbasaur, Charizard, Charmander, Dragonite, Gengar, Gyrados, Pikachu, Snorlax, Squirtle, Zapdos
 
+![Pokemon1-5](https://github.com/CouchCat/Pokedex-Imagenet/blob/master/resources/pokemon1-5.png)
+![Pokemon6-10](https://github.com/CouchCat/Pokedex-Imagenet/blob/master/resources/pokemon6-10.png)
+
 -----
 
 ## **Walkthrough**
+
+![Workflow](https://github.com/CouchCat/Pokedex-Imagenet/blob/master/resources/coreml-steps-flowchart-768x432.png)
+
 ### Background:
 
 Since most of my projects usually end up being closely related to the video-game culture or my childhood oriented series, I decided it would be cool to recreate the Pokédex experience of the popular series Pokémon. 
@@ -105,4 +113,5 @@ MobileNetV2 builds upon the ideas from MobileNetV1, however, V2 introduces two n
 
 Overall, the MobileNetV2 models are faster for the same accuracy across the entire latency spectrum. In particular, the new models use 2x fewer operations, need 30% fewer parameters and are about 30-40% faster than MobileNetV1 models, all while achieving higher accuracy. Even using my relatively dated iPhone6, MobileNetV2 still manages to achieves good performance.
 
+![Mobilenetv2_bottleneck](https://github.com/CouchCat/Pokedex-Imagenet/blob/master/resources/mobilenetv2_bottleneck.png)
 
