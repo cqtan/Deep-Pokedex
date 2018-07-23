@@ -1,0 +1,109 @@
+{
+    "Records": [
+        {
+            "keywords": "snorlax",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "gyrados",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "dragonite",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "charizard",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "scyther",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "pikachu",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "squirtle",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "bulbasaur",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "gengar",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "zapdos",
+            "limit": 500,
+            "size": "medium",
+            "format": "png",
+            "print_urls": true
+        },
+        {
+            "keywords": "pikachu",
+            "limit": 500,
+            "size": "medium",
+            "format": "jpg",
+            "print_urls": true
+        },
+        {
+            "keywords": "squirtle",
+            "limit": 500,
+            "size": "medium",
+            "format": "jpg",
+            "print_urls": true
+        },
+        {
+            "keywords": "bulbasaur",
+            "limit": 500,
+            "size": "medium",
+            "format": "jpg",
+            "print_urls": true
+        },
+        {
+            "keywords": "gengar",
+            "limit": 500,
+            "size": "medium",
+            "format": "jpg",
+            "print_urls": true
+        },
+        {
+            "keywords": "zapdos",
+            "limit": 500,
+            "size": "medium",
+            "format": "jpg",
+            "print_urls": true
+        }
+    ]
+}
