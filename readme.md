@@ -24,11 +24,11 @@ It was also due to the tremendous help of [Adrian Rosebrock's tutorials](https:/
 &nbsp;
 ### **Collecting and pruning Pokemon:**
 
-My first take on this was of course to follow his tutorial in doing something surprisingly similar in motivation. Since his model is made to classify 5 different Pokémon of which around 500 images of each Pokémon were gathered by him beforehand, I wanted go through the process from the beginning step by step.
+My first take on this was of course to follow his tutorial in doing something surprisingly similar in motivation. Since his model is made to classify 5 different Pokémon of which around 300 images of each Pokémon were gathered by him beforehand, I wanted go through the process from the beginning step by step.
 
 In a previous tutorial, he expressed his pleasant experience with the [Bing Image Seach API](https://azure.microsoft.com/en-us/try/cognitive-services/?api=bing-image-search-api) to quickly gather a huge amount of training data. This sounded great since I really did not want to go through the web an download each image individually. Sadly, the free version only allowed monthly transaction limit of 3000 and [Google's version](https://developers.google.com/image-search/) was announced deprecated a while back in 2011. This did not suffice for me since I would easily go over this threshold, especially if I would pursue similar projects. An alternative is required!
 
-After searching around I managed to find one that goes through Google Images with the help of selenium to target more than 100 images per run. With this I managed to download 1000 images of 5 new Pokémon of my choice with relative ease. The only hardship of this part was the pruning step. An average of 300 images for each Pokémon were actually useful for training purposes. I actually planned to include all 151 Pokémon of the first generation but quickly realized the amount of manual labor it would be to prune them, so I stuck with 5 additional ones. In total I had 10 unique Pokémon and 1 background class some background images of offices, which I needed when I'm not targeting Pokémon. After pruning, this amounted to around 3000 images.
+After searching around I managed to find one that goes through Google Images with the help of selenium to target more than 100 images per run. With this I managed to download 1000 images of 5 new Pokémon of my choice with relative ease. The only tedious part was the pruning step. An average of 200 images for each Pokémon were actually useful for training purposes. As a side note, I actually planned to include all 151 Pokémon of the first generation but I quickly realized the amount of manual labor it would require to prune them. So I was content with 5 additional ones. In total I had 10 unique Pokémon and 1 background class some background images of offices, which I needed when I'm not targeting Pokémon. After pruning, this amounted to around 3000 images.
 
 
 &nbsp;
@@ -101,6 +101,8 @@ MobileNetV2 builds upon the ideas from MobileNetV1, however, V2 introduces two n
 * 1) linear bottlenecks between the layers
 * 2) shortcut connections between the bottlenecks
 
-![MObileNetv2_v1_comparison](https://2.bp.blogspot.com/-E7CT0RHBWq4/WsKlTgEeX2I/AAAAAAAACh0/dp1B4yh6O2k4H1LuC7BA-EKzrL7W0L8iACLcBGAs/s1600/image2.png)
+![MobileNetv2_v1_comparison](https://2.bp.blogspot.com/-E7CT0RHBWq4/WsKlTgEeX2I/AAAAAAAACh0/dp1B4yh6O2k4H1LuC7BA-EKzrL7W0L8iACLcBGAs/s1600/image2.png)
 
 Overall, the MobileNetV2 models are faster for the same accuracy across the entire latency spectrum. In particular, the new models use 2x fewer operations, need 30% fewer parameters and are about 30-40% faster than MobileNetV1 models, all while achieving higher accuracy. Even using my relatively dated iPhone6, MobileNetV2 still manages to achieves good performance.
+
+
